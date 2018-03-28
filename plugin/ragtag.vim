@@ -28,7 +28,7 @@ augroup ragtag
   autocmd FileType *html*,wml,jsp,gsp,mustache,smarty         call s:Init()
   autocmd FileType php,asp*,cf,mason,eruby,liquid,jst,eelixir call s:Init()
   autocmd FileType xml,xslt,xsd,docbk                         call s:Init()
-  autocmd FileType javascript,javascript.jsx,jsx,handlebars              call s:Init()
+  autocmd FileType javascript,jsx,handlebars                  call s:Init()
   autocmd InsertLeave * call s:Leave()
   autocmd CursorHold * if exists("b:loaded_ragtag") | call s:Leave() | endif
 augroup END
